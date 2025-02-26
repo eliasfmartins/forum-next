@@ -1,11 +1,11 @@
-// import { Robo } from "@/components/robo";
+import { Robo } from "@/components/robo";
 
 export default function Home() {
 	return (
 		<div className="bg-[#0F172A] flex-1 flex flex-col">
-			<div className="w-[50%] mx-auto h-[20%] rounded-[25px] overflow-hidden">
+			<div className="w-[500px] mx-auto  mt-28 rounded-[25px] overflow-hidden">
 
-				{/* <Robo /> */}
+				<Robo />
 			</div>
 
 			<main className="flex-1 flex flex-col items-center justify-center text-center px-6">
