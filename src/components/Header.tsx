@@ -63,13 +63,15 @@ export default function Header() {
 			{/* Overlay e Menu Mobile Fullscreen */}
 			<div
 				className={clsx(
-					"fixed inset-0 bg-gray-900/90 backdrop-blur-xl flex flex-col items-center justify-center transition-all duration-500 rounded-3xl",
-					menuOpen ? "opacity-100 visible h-screen w-[95%]" : "opacity-0 invisible h-0"
+					"fixed inset-0 bg-gray-900/100 backdrop-blur-xl flex flex-col items-center justify-center transition-all duration-500",
+					menuOpen
+						? "opacity-100 visible h-screen w-full rounded-none"
+						: "opacity-0 invisible h-0 w-0"
 				)}
 			>
 				{/* Título no Overlay */}
 				<div className="text-center text-3xl font-bold text-green-400 mb-8">
-					<span>FórumTech</span>
+					FórumTech
 				</div>
 
 				<button
